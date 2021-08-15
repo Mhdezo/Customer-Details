@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+	<link rel="stylesheet" href="app.css">
+	<title>Customer Details</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Customer Details:</h1>
+		</div>
+		<hr>
+		<form action="/customer_details.com" id="form" autocomplete="off">
+			<ul>
+				<li>
+					<div class="fullName">
+						<label for="firstName">
+							<h4>Full name <span id="star">*</span></h4>
+						</label>
+						<section>
+							<input type="text" name="firstName" id="firstName">
+							<input type="text" name="lastName" id="lastName">
+							<label for="firstName">
+								<span>First Name</span>
+							</label>
+							<label for="lastName">
+								<span>Last Name</span>
+							</label>
+						</section>
+					</div>
+				</li>
+				<li>
+					<div class="address">
+						<label for="streetAddress">
+							<h4>Address <span id="star">*</span></h4>
+						</label>
+						<input type="text" name="streetAddress" id="streetAddress">
+						<label for="streetAddress">
+							<span>Street Address</span>
+						</label>
+						<input type="text" name="addLine2" id="addLine2">
+						<label for="addLine2">
+							<span>Street Address Line 2</span>
+						</label>
+						<section>
+							<input type="text" name="city" id="city">
+							<input type="text" name="state" id="state">
+							<label for="city">
+								<span>City</span>
+							</label>
+							<label for="state">
+								<span>State / Province</span>
+							</label>
+						</section>
+						<input type="text" name="zipCode" id="zipCode">
+						<label for="zipCode">
+							<span>Postal / Zip Code</span>
+						</label>
+					</div>
+				</li>
+				<li>
+					<div class="phone">
+						<label for="phoneNumber">
+							<h4>Phone Number <span id="star">*</span></h4>
+						</label>
+						<input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(000) 000-0000">
+					</div>
+				</li>
+				<li>
+					<div class="email">
+						<label for="email">
+							<h4>E-mail</h4>
+						</label>
+						<input type="text" name="email" id="email" placeholder="ex: email@yahoo.com">
+						<label for="email">
+							<span>example@example.com</span>
+						</label>
+					</div>
+				</li>
+				<hr>
+				<li>
+					<div class="about">
+						<label for="selectOption">
+							<h4>How did you hear about us? <span id="star">*</span></h4>
+						</label>
+						<select name="selectOption" id="selectOption">
+							<option value="" selected>Please Select</option>
+							<option value="None">None</option>
+							<option value="Newspaper">Newspaper</option>
+							<option value="Internet">Internet</option>
+							<option value="Magazine">Magazine</option>
+							<option value="Other">Other (Please specify...)</option>
+						</select>
+					</div>
+				</li>
+				<li id="other">
+					<div class="other">
+						<label for="otherValue">
+							<h4>Other <span id="star">*</span></h4>
+						</label>
+						<input type="text" id="otherValue" name="other">
+					</div>
+				</li>
+				<li>
+					<div class="feedback">
+						<label for="feedback">
+							<h4>Feedback about us:</h4>
+						</label>
+						<textarea name="feedback" id="feedback" cols="70" rows="10" aria-multiline="true"></textarea>
+					</div>
+				</li>
+				<li>
+					<div class="suggestions">
+						<label for="suggestions">
+							<h4>Suggestions if any for further improvement:</h4>
+						</label>
+						<textarea name="suggestions" id="suggestions" cols="70" rows="10"
+							aria-multiline="true"></textarea>
+					</div>
+				</li>
+				<li>
+					<div class="willing">
+
+						<h4>Will you be willing to recommend us?</h4>
+
+						<div class="checkBoxs">
+							<input type="checkbox" id="checkboxElement1" value="yes" />
+							<label for="checkboxElement1">
+								<span class="indicator"></span>
+								<span>Yes</span>
+							</label>
+							<input type="checkbox" id="checkboxElement2" value="maybe" />
+							<label for="checkboxElement2">
+								<span class="indicator"></span>
+								<span>Maybe</span>
+							</label>
+							<input type="checkbox" id="checkboxElement3" value="no" />
+							<label for="checkboxElement3">
+								<span class="indicator"></span>
+								<span>No</span>
+							</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ref">
+						<label for="">
+							<h4>Please give reference of any two people whom you feel:</h4>
+						</label>
+						<table>
+							<thead>
+								<tr>
+									<th id="emptyCell"></th>
+									<th style="border-top-left-radius: 5px;"><label for="nameTab1"> Full Name</label>
+									</th>
+									<th><label for="addressTab1">Address</label></th>
+									<th style="border-top-right-radius: 5px;"><label for="numberTab1">Contact
+											Number</label></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="border-top-left-radius: 5px;">1</td>
+									<td><input type="text" name="fullName" id="nameTab1"></td>
+									<td><input type="text" name="address" id="addressTab1"></td>
+									<td><input type="tel" name="contactNumber" id="numberTab1"></td>
+								</tr>
+								<tr>
+									<td style="border-bottom-left-radius: 5px;">2</td>
+									<td><input type="text" name="fullName" id="nameTab2"></td>
+									<td><input type="text" name="address" id="addressTab2"></td>
+									<td style="border-bottom-right-radius: 5px;"><input type="tel" name="contactNumber"
+											id="numberTab2"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</form>
+		<hr>
+		<div class="button">
+			<button type="submit" form="form">Submit</button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
