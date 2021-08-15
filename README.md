@@ -2,8 +2,8 @@ Customer-Details
 
 A Form Build using
 
-HTML5
-CSS3
+HTML5,
+CSS3,
 JAVASCRIPT
 
 Your task is create a customer details form that collects the data from the user.
